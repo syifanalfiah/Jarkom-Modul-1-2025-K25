@@ -10,6 +10,8 @@
 ---
 
 ## 1. Konfigurasi Static IP (soal_1.sh)
+<img width="988" height="748" alt="image" src="https://github.com/user-attachments/assets/32db62ad-df7d-4230-97f2-0196d4c7703f" />
+
 
 ### Router Eru
 ```bash
@@ -182,8 +184,6 @@ ip.addr == 10.76.1.3
 
 5. Save capture sebagai `.pcapng`
 
-**Hasil:** Semua paket ICMP antara Manwe dan Eru berhasil ditangkap.
-
 ---
 
 ## 7. FTP Server Setup (soal_7.sh)
@@ -198,6 +198,8 @@ apt-get install vsftpd
 mkdir -p /home/shared
 chmod 755 /home/shared
 ```
+![photo_6271744518637947943_y](https://github.com/user-attachments/assets/c9d9cc3d-8b7b-454c-86b6-36fc33e5ad5c)
+
 
 ### Buat User dengan Hak Akses Berbeda
 
@@ -285,6 +287,8 @@ ftp> cd /home/shared
 ftp> quit
 ```
 
+
+
 ---
 
 ## 8. FTP Upload dari Ulmo (soal_8.sh)
@@ -334,6 +338,8 @@ ftp.request.command
 - `CWD shared`
 - `STOR cuaca.txt` ← Perintah upload
 - `226 Transfer complete`
+
+![photo_6271744518637947943_y](https://github.com/user-attachments/assets/4b8179b2-b3d0-40d2-b172-3e099f68976b)
 
 ---
 
@@ -707,12 +713,12 @@ KOMJAR25{Brut3_F0rc3_f6xnt83gDVzUyJryp82HCrMwY}
 
 ---
 
-## 15. USB Keylogger Analysis (soal_15.sh)
+## 15. USB Keylogger Analysis (soal_16.sh)
 
 
 ### Analisis Keystrokes
 
-Dari soal_16.sh (kemungkinan typo numbering):
+Dari soal_16.sh:
 ```
 ind@psg420.com:{6r_6e#TfT1p
 ```
@@ -736,8 +742,6 @@ KOMJAR25{Y0u_4r3_4_g00d_4nalyz3r_jLeM4A0PhTSH66yec4SlMYPxg}
 ---
 
 ## 16. Malware File Identification (soal_17.sh)
-
-⚠️ **PERINGATAN: File ini mengandung malware asli!**
 
 ### Download Capture
 
