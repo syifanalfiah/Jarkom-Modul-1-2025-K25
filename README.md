@@ -82,7 +82,6 @@ ping google.com
 Aktifkan IP forwarding dan NAT:
 
 ```bash
-# Enable NAT/Masquerade
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.76.0.0/16
 ```
 
@@ -110,7 +109,6 @@ ping 10.76.1.3  # dari Ulmo ke Manwe
 Dengan NAT yang sudah dikonfigurasi di soal 3, sekarang test internet access:
 
 ```bash
-# Di setiap client
 ping google.com
 ping 8.8.8.8
 ```
@@ -121,7 +119,7 @@ Jika gagal, pastikan:
 - Routing table benar
 
 ```bash
-route -n  # check routing table
+route -n  
 ```
 
 ---
@@ -132,7 +130,6 @@ Agar konfigurasi tidak hilang saat restart, tambahkan command ke `.bashrc` atau 
 
 ### Eru
 ```bash
-# Add to /root/.bashrc
 apt update
 apt install iptables -y
 iptables -t nat -A POSTROUTING -o eth0 -j MASQUERADE -s 10.76.0.0/16
@@ -196,7 +193,6 @@ ip.addr == 10.76.1.3
 apt-get update
 apt-get install vsftpd
 
-# Buat shared directory
 mkdir -p /home/shared
 chmod 755 /home/shared
 ```
@@ -288,9 +284,6 @@ ftp> ls
 ftp> cd /home/shared 
 ftp> quit
 ```
-
-
-
 ---
 
 ## 8. FTP Upload dari Ulmo (soal_8.sh)
@@ -442,7 +435,6 @@ Melkor melakukan DoS attack dengan ping flooding.
 
 ### Normal Ping (Baseline)
 ```bash
-# Di Melkor
 ping 10.76.1.1 -c 5
 ```
 
